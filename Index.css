@@ -1,3 +1,8 @@
+body {
+    font-family: Open Sans,ruble,sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+}
 div #main {
 
 }
@@ -15,11 +20,12 @@ div #menuGlobal0 {
 	position: fixed;
 	top: 0;
 	z-index: 2001;
+    --isHide: 0;
 }
 
 div #menuGlobal1 {
 	background: #282e33;
-	width: 145px;'
+	width: 145px;
 }
 div #menuGlobal2 {
 	height: 100vh;
@@ -37,4 +43,96 @@ div #button {
 }
 div #button hover {  
 	color: #ccc;
+}
+.menu_group {
+	padding: 4px 0;
+	position: relative;
+}
+.menu_group:first-child {
+	padding-top: 0;
+}
+.menu_group:last-child {
+	padding-top: 0;
+}
+.menu_group:before {
+    bottom: 0;
+    content: "";
+    height: 1px;
+    min-width: 16px;
+    position: absolute;
+}
+.menu_group:not(.G3o_7):before {
+    background: #53585c;
+}
+
+.menu_group:not(.iuI8Z):before {
+    left: 16px;
+    width: calc(100% - 32px);
+}
+
+.menu_button {
+	/*.pt8sg */
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+}
+.menu_button:not(.ogSFU) {
+	padding: 16px 0 16px 12px;
+    border-left-color: transparent;
+}
+.menu_button:not(.usAxl) {
+	border-left-style: solid;
+    border-left-width: 4px;
+    font-size: 13px;
+    line-height: 16px;
+}
+.menu_button:not(.usAxl):not(.qh364) {
+    border-left-color: transparent;
+}
+
+.menu_button:not(.qh364):not(.hB_bB) {
+    color: #c9cbcc;
+}
+
+.text_Menu_button {
+	margin-left: 8px;
+}
+
+.menu_button svg {
+	fill: #c9cbcc;
+}
+
+.menu_Avatar_img {
+    border-radius: 50%;
+    display: block;
+    height: 60px;
+    width: 60px;
+}
+
+.menu_avatar_2 {
+    padding-left: 24px;
+}
+.menu_avatar_1 {
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    min-width: 32px;
+    position: relative;
+}
+
+.menu_hide_button {
+    fill: #fff;
+}
+#menu_hide:hover {
+    background: #eeeeef;
+    color: #282e33;
 }
